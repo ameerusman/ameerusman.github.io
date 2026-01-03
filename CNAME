@@ -1,1 +1,291 @@
-ameerusman.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameer Usman Ali Khan</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-blue: #0A66C2;
+            --light-blue: #EAF2FB;
+            --text-dark: #1f2933;
+            --text-light: #4b5563;
+            --border-light: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        section {
+            margin-bottom: 70px;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--light-blue);
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--text-light);
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Hero */
+        .hero {
+            background-color: var(--light-blue);
+            padding: 70px 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+        }
+
+        .links a {
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 35px;
+        }
+
+        .job span {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Skills */
+        .skills-list li {
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 25px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-light);
+            color: var(--text-light);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Ameer Usman Ali Khan</h1>
+            <p>
+                Data Engineer • Machine Learning Engineer • Embedded Systems  
+                <br>
+                Designing scalable data solutions with strong business alignment
+            </p>
+            <div class="links">
+                <a href="mailto:ameer.uak@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/ameeruak" target="_blank">LinkedIn</a>
+                <a href="https://github.com/" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I am a data and systems engineer with a background spanning data engineering,
+                machine learning, embedded systems, and system integration. I specialize in
+                transforming complex, multi-source data into analytics-ready datasets and
+                decision-driving dashboards. My experience across product- and service-driven
+                environments allows me to balance deep technical execution with real business impact.
+            </p>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <h3>Data Specialist — Tharwah</h3>
+                <span>Jun 2025 – Present | Remote, KSA (Freelance)</span>
+                <ul>
+                    <li>Built executive dashboards using Odoo ERP by integrating multiple data sources.</li>
+                    <li>Created advanced visualizations using Power BI for improved decision-making.</li>
+                    <li>Assisted in data engineering workflows to streamline pipelines.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Senior Data & Machine Learning Engineer — SalTec Smart Power</h3>
+                <span>Jul 2023 – Jun 2025 | Karachi, Pakistan</span>
+                <ul>
+                    <li>Led the Data & ML team delivering data-driven products using Python, SQL, and Power BI.</li>
+                    <li>Developed ML models for load-shedding prediction, asset feasibility, and OPEX reduction.</li>
+                    <li>Worked with high-volume data streams and embedded ML platforms (TinyML, Edge Impulse).</li>
+                    <li>Collaborated with stakeholders through EDA and proof-of-concept development.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Embedded Software Engineer — DreamBig Semiconductor</h3>
+                <span>Jun 2020 – Aug 2021 | Karachi, Pakistan</span>
+                <ul>
+                    <li>Developed Linux NIC drivers in C for smart networking hardware.</li>
+                    <li>Worked with DPDK for high-performance packet processing.</li>
+                    <li>Collaborated closely with hardware teams for system-level optimization.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Advanced Trainee Engineer — Averos Technologies</h3>
+                <span>Sep 2019 – Mar 2020 | Karachi, Pakistan</span>
+                <ul>
+                    <li>Developed firmware for BLE beacons on Nordic nRF52 and TI CC2640.</li>
+                    <li>Designed automated test systems for real-time power analysis.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Trainee Hardware Design Engineer — Wavetec</h3>
+                <span>Jan 2018 – Mar 2019 | Karachi, Pakistan</span>
+                <ul>
+                    <li>Developed embedded firmware for PIC and Atmel microcontrollers.</li>
+                    <li>Worked on the Check-out Manager Unit, reducing customer wait times by ~20%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Insights Dashboard</h3>
+                <p>AI-enabled analytics dashboard for telecom site data, supporting anomaly detection and decision-making.</p>
+            </div>
+
+            <div class="project">
+                <h3>Cathodic Protection Monitoring System</h3>
+                <p>Remote hardware-software solution improving infrastructure safety at Shell Machike Terminal.</p>
+            </div>
+
+            <div class="project">
+                <h3>Bluetooth Beacon Indoor Positioning</h3>
+                <p>BLE-based real-time indoor location tracking for logistics and retail analytics.</p>
+            </div>
+
+            <div class="project">
+                <h3>Ball Balancing Robot</h3>
+                <p>2-D inverted pendulum system demonstrating real-time control systems expertise.</p>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>MSc Computer Science</strong> — University of Kent, UK (Distinction)</p>
+            <p><strong>B.Eng Electrical Engineering</strong> — NUST, Pakistan (GPA 3.56 / High Achiever)</p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Programming:</strong> Python, SQL, C/C++, JavaScript, PHP</li>
+                <li><strong>Data & ML:</strong> Pandas, NumPy, Scikit-learn, TensorFlow, Power BI</li>
+                <li><strong>Frameworks & Tools:</strong> FastAPI, Flask, Kafka, Odoo, AWS</li>
+                <li><strong>Embedded:</strong> PIC, Nordic nRF52, TI CC26XX, Raspberry Pi</li>
+                <li><strong>Workflows:</strong> Agile, Scrum, Kanban</li>
+            </ul>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications">
+            <h2>Certifications & Learning</h2>
+            <ul>
+                <li>Google Project Management</li>
+                <li>High Performance Collaboration — Northwestern University</li>
+                <li>Critical Thinking — University of Michigan & LinkedIn Learning</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>ameer.uak@gmail.com • Karachi, Pakistan</p>
+        <p>© Ameer Usman Ali Khan</p>
+    </footer>
+
+</body>
+</html>
