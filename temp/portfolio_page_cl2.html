@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameer Usman Ali Khan - Data Engineer & ML Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: white;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        .header {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 60px;
+            margin-bottom: 80px;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 3px solid #2a5298;
+        }
+
+        .profile-section h1 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #1e3c72;
+            font-weight: 400;
+        }
+
+        .profile-section .tagline {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .profile-section .contact a {
+            display: block;
+            color: #2a5298;
+            text-decoration: none;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .profile-section .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .intro p {
+            margin-bottom: 15px;
+        }
+
+        .intro strong {
+            color: #1e3c72;
+        }
+
+        /* Section Headers */
+        .section-header {
+            font-size: 1.8em;
+            color: #1e3c72;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px 60px;
+            margin-bottom: 80px;
+        }
+
+        .project-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-img {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .project-item h3 {
+            font-size: 1.3em;
+            color: #2a5298;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .project-item h3 a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .project-item h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .project-item p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            margin-bottom: 80px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 60px;
+        }
+
+        .skill-group {
+            margin-bottom: 10px;
+        }
+
+        .skill-group strong {
+            color: #2a5298;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.05em;
+        }
+
+        .skill-group p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+
+        /* Experience Section */
+        .experience-section {
+            margin-bottom: 80px;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px 60px;
+        }
+
+        .experience-item h3 {
+            font-size: 1.15em;
+            color: #2a5298;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .meta {
+            color: #888;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .experience-item ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .experience-item li {
+            margin-bottom: 6px;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        /* Education Section */
+        .education-section {
+            margin-bottom: 80px;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 60px;
+        }
+
+        .education-item h3 {
+            font-size: 1.15em;
+            color: #2a5298;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .education-item p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.9em;
+        }
+
+        /* Certifications Section */
+        .certifications-section {
+            margin-bottom: 60px;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 60px;
+        }
+
+        .cert-item {
+            margin-bottom: 10px;
+        }
+
+        .cert-item strong {
+            color: #2a5298;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        .cert-meta {
+            color: #888;
+            font-size: 0.85em;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            color: #888;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .header {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .profile-section {
+                text-align: center;
+                align-items: center;
+            }
+
+            .projects-grid,
+            .skills-grid,
+            .experience-grid,
+            .education-grid,
+            .cert-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Header Section -->
+        <div class="header">
+            <div class="profile-section">
+                <img src="../assets/images/DPpicture2.jpg" alt="Ameer Usman Ali Khan" class="profile-img">
+                <h1>Ameer Usman Ali Khan</h1>
+                <p class="tagline">Data Engineer & Machine Learning Specialist</p>
+                <div class="contact">
+                    <a href="mailto:ameer.uak@gmail.com">ameer.uak@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/ameer-usman-ali-khan" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/ameerusman" target="_blank">GitHub</a>
+                    <a href="tel:+923084255289">+92 308-4255289</a>
+                </div>
+            </div>
+            <div class="intro">
+                <p>Hello, my name is <strong>Ameer Usman Ali Khan</strong></p>
+                <p>With a diverse background in data engineering, software development, and system integration, I bring a strong ability to design and deliver reliable, scalable data solutions with the right balance of technical depth and business alignment.</p>
+                <p>My adaptability and ability to quickly understand new data sources, pipelines, and requirements developed through hands-on work across multiple domains allow me to perform effectively in both product and service-driven environments.</p>
+                <p>I thrive in dynamic settings, translating complex data into analytics-ready, high-quality datasets while ensuring that technical execution consistently supports broader business objectives.</p>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <h2 class="section-header">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="img/projects/insights-dashboard.png" alt="Insights Dashboard" class="project-img">
+                <h3>Insights Dashboard</h3>
+                <p>Developed a data-driven dashboard combining analytics and AI to extract actionable insights from telecom site data, enabling better decision-making and anomaly detection.</p>
+            </div>
+
+            <div class="project-item">
+                <img src="img/projects/cathode-protection.png" alt="Cathode Protection Monitoring System" class="project-img">
+                <h3>Cathode Protection Monitoring System</h3>
+                <p>Designed a remote hardware and software solution to monitor cathodic protection systems at outdoor sites, improving infrastructure safety at Shell Machike Terminal.</p>
+            </div>
+
+            <div class="project-item">
+                <img src="img/projects/ble-beacon.png" alt="Bluetooth Beacon for Indoor Positioning" class="project-img">
+                <h3>Bluetooth Beacon for Indoor Positioning</h3>
+                <p>Created a BLE-based indoor positioning solution to provide real-time location tracking within buildings, ideal for logistics, security, and retail analytics.</p>
+            </div>
+
+            <div class="project-item">
+                <img src="img/projects/cmu.png" alt="Check-out Manager Unit" class="project-img">
+                <h3>Check-out Manager Unit</h3>
+                <p>Engineered a supermarket checkout automation system using a ticketing-based flow to reduce wait times and streamline customer service, achieving ~20% reduction at Lidl.</p>
+            </div>
+
+            <div class="project-item">
+                <img src="img/projects/ball-robot.png" alt="Ball Balancing Robot" class="project-img">
+                <h3>Ball Balancing Robot</h3>
+                <p>Built a 2-D inverted pendulum system, demonstrating control systems expertise by achieving real-time balance using sensors and control algorithms. Won silver medal at IEEEP.</p>
+            </div>
+
+            <div class="project-item">
+                <img src="img/projects/dpdk.png" alt="DPDK Implementation" class="project-img">
+                <h3>DPDK Implementation</h3>
+                <p>Contributed to high-performance packet processing using DPDK in user-space for networking applications, improving throughput and latency on network interface cards.</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills-section">
+            <h2 class="section-header">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <strong>Programming Languages</strong>
+                    <p>Python, SQL, C/C++, PHP, HTML, CSS, JavaScript</p>
+                </div>
+                
+                <div class="skill-group">
+                    <strong>Frameworks & Libraries</strong>
+                    <p>Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, FastAPI, Flask, SQLAlchemy, OpenCV, BeautifulSoup, Plotly, DuckDB, Selenium, Dagster, LangChain</p>
+                </div>
+                
+                <div class="skill-group">
+                    <strong>Tools & Technologies</strong>
+                    <p>Git, Power BI, AWS, MQTT, Kafka, Odoo, SAP, Figma, Docker, Linux, VSCode, Trello, Asana, Linear, DrawIO</p>
+                </div>
+                
+                <div class="skill-group">
+                    <strong>Embedded Platforms</strong>
+                    <p>PIC, Atmel, Raspberry Pi, Arduino, TI CC26XX, Nordic nRF52 (Cortex M3 & M4), Texas Instruments RTOS, Rock Pi</p>
+                </div>
+                
+                <div class="skill-group">
+                    <strong>Development Tools</strong>
+                    <p>MPLAB, Code Composer Studio, Segger Embedded Studio, KiCAD, Multisim, Octave, Proteus, MATLAB, Weka, Excel, Google Colab</p>
+                </div>
+                
+                <div class="skill-group">
+                    <strong>Methodologies & Workflows</strong>
+                    <p>Agile, Scrum, Kanban, Critical Thinking, Problem Solving, Data Pipeline Design</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="experience-section">
+            <h2 class="section-header">Work Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Data Specialist</h3>
+                    <div class="meta">Tharwah | Jun 2025 – Present | Remote, KSA</div>
+                    <ul>
+                        <li>Using Odoo ERP dashboard utility to connect data from different sources and create dashboards</li>
+                        <li>Creating visualizations with Power BI for enhanced versatility</li>
+                        <li>Assisting in the Data Engineering process to streamline pipelines</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Sr. Data and Machine Learning Engineer</h3>
+                    <div class="meta">SalTec Smart Power | Jul 2023 – Jun 2025 | Karachi, PK</div>
+                    <ul>
+                        <li>Led the Data & ML team to design innovative products and implement data-driven solutions</li>
+                        <li>Drove value from high-volume data streams through statistical analysis and ML techniques</li>
+                        <li>Developed models for load-shedding prediction, asset feasibility, and operational optimization</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Embedded Software Engineer</h3>
+                    <div class="meta">DreamBig Semiconductor | Jun 2020 – Aug 2021 | Karachi, PK</div>
+                    <ul>
+                        <li>Developed Smart Network Interface Card driver on Linux using C language</li>
+                        <li>Implemented DPDK for high-speed packet processing</li>
+                        <li>Collaborated with hardware team for enhanced performance</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Advanced Trainee Engineer</h3>
+                    <div class="meta">Averos Technologies | Sep 2019 – Mar 2020 | Karachi, PK</div>
+                    <ul>
+                        <li>Developed firmware for BLE Beacons on Nordic nRF52 and TI CC2640 platforms</li>
+                        <li>Designed automated testing environment with custom hardware jig</li>
+                        <li>Implemented Bluetooth gateway for real-time power consumption analysis</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Trainee Hardware Design Engineer</h3>
+                    <div class="meta">Wavetec | Jan 2018 – Mar 2019 | Karachi, PK</div>
+                    <ul>
+                        <li>Developed embedded firmware in C for PIC and Atmel microcontrollers</li>
+                        <li>Integrated peripheral hardware with application software</li>
+                        <li>Collaborated on Check-out Manager Unit achieving 20% wait time reduction</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="education-section">
+            <h2 class="section-header">Education</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <h3>MSc. Computer Science</h3>
+                    <div class="meta">University of Kent | Canterbury, UK | Dec 2022</div>
+                    <p>Distinction | Bestway Foundation Scholarship | Global Skills Award: Gold</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>B.Eng. Electrical Engineering</h3>
+                    <div class="meta">National University of Science and Technology | Karachi, PK | Jun 2016</div>
+                    <p>GPA: 3.56/4.0 | Merit Scholarship | High Achiever Awardee</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="certifications-section">
+            <h2 class="section-header">Certifications & Continued Learning</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <strong>World Class Manager: Course I</strong>
+                </div>
+                
+                <div class="cert-item">
+                    <strong>Foundation of Project Management</strong>
+                    <div class="cert-meta">Google, Coursera</div>
+                </div>
+                
+                <div class="cert-item">
+                    <strong>High Performance Collaboration</strong>
+                    <div class="cert-meta">Northwestern University, Coursera</div>
+                </div>
+                
+                <div class="cert-item">
+                    <strong>Critical Thinking for the Information Age</strong>
+                    <div class="cert-meta">University of Michigan, Coursera</div>
+                </div>
+                
+                <div class="cert-item">
+                    <strong>Model Thinking</strong>
+                    <div class="cert-meta">University of Michigan, Coursera</div>
+                </div>
+                
+                <div class="cert-item">
+                    <strong>Critical Thinking</strong>
+                    <div class="cert-meta">LinkedIn Learning</div>
+                </div>
+                
+                <div class="cert-item">
+                    <strong>Problem Solving: Principles and Practices</strong>
+                    <div class="cert-meta">Victor W. Goldschmidt</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Ameer Usman Ali Khan. All rights reserved.</p>
+            <p style="margin-top: 10px;">Karachi, Sindh, Pakistan</p>
+        </footer>
+    </div>
+</body>
+</html>
